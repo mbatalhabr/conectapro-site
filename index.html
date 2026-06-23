@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conectapro — Monitoramento de ambientes críticos para laboratórios | RDC 978</title>
+<meta name="description" content="Plataforma de monitoramento contínuo de temperatura e umidade para laboratórios de análises clínicas. Do desvio à ação corretiva, com prova de conformidade para a RDC 978/2025 da ANVISA.">
+<meta name="theme-color" content="#0A3742">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-64.png" sizes="64x64">
+<link rel="canonical" href="https://www.conectapro.com.br/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Conectapro — Seus ambientes críticos sob vigilância 24/7">
+<meta property="og:description" content="Monitoramento contínuo de temperatura e umidade para laboratórios clínicos, com prova de conformidade para a RDC 978/2025.">
+<meta property="og:image" content="https://www.conectapro.com.br/assets/og-image.png">
+<meta property="og:url" content="https://www.conectapro.com.br/">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.className+=" js";</script>
+</head>
+<body>
+
+<!-- ===== Sprite de ícones (logo + ícones de linha) ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0E7C86"/><stop offset="1" stop-color="#0A3742"/>
+    </linearGradient>
+    <symbol id="logo-icon" viewBox="0 0 300 320">
+      <g transform="translate(150,33.28) scale(1.32)">
+        <path d="M 0 0 L 86 26 L 86 96 Q 86 165 0 192 Q -86 165 -86 96 L -86 26 Z" fill="url(#lg1)"/>
+        <rect x="-24" y="74" width="20" height="86" rx="10" fill="#FFFFFF"/>
+        <circle cx="-14" cy="156" r="19" fill="#FFFFFF"/>
+        <rect x="-19" y="106" width="10" height="52" fill="#2BB3C0"/>
+        <circle cx="-14" cy="156" r="12" fill="#2BB3C0"/>
+        <line x1="2" y1="92" x2="13" y2="92" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+        <line x1="2" y1="106" x2="13" y2="106" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+        <line x1="2" y1="120" x2="13" y2="120" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+        <circle cx="-14" cy="70" r="4.5" fill="#2BB3C0"/>
+        <path d="M -10.5 50.3 A 20 20 0 0 1 5.8 67.2" fill="none" stroke="#2BB3C0" stroke-width="6" stroke-linecap="round"/>
+        <path d="M -8.1 36.5 A 34 34 0 0 1 19.7 65.3" fill="none" stroke="#2BB3C0" stroke-width="6" stroke-linecap="round" stroke-opacity="0.72"/>
+        <path d="M -5.7 22.7 A 48 48 0 0 1 33.5 63.3" fill="none" stroke="#2BB3C0" stroke-width="6" stroke-linecap="round" stroke-opacity="0.46"/>
+      </g>
+    </symbol>
+    <g id="ic" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></g>
+    <symbol id="i-thermo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13.5V5a2 2 0 1 1 4 0v8.5a4 4 0 1 1-4 0Z"/><line x1="12" y1="9" x2="12" y2="14.5"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9a6 6 0 1 1 12 0c0 5 2 6 2 6H4s2-1 2-6Z"/><path d="M10 19a2 2 0 0 0 4 0"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-broadcast" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M8.5 8.5a5 5 0 0 0 0 7"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M6 6a8.5 8.5 0 0 0 0 12"/><path d="M18 6a8.5 8.5 0 0 1 0 12"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></symbol>
+    <symbol id="i-mute" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><line x1="16" y1="9" x2="21" y2="14"/><line x1="21" y1="9" x2="16" y2="14"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="M3 13l9 5 9-5"/></symbol>
+    <symbol id="i-sitemap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="3" y="16" width="6" height="5" rx="1"/><rect x="15" y="16" width="6" height="5" rx="1"/><path d="M12 8v3M6 16v-2h12v2"/></symbol>
+    <symbol id="i-clip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9.5 4V3h5v1"/><path d="M9 13l2 2 4-4"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7Z"/><path d="M14 3v4h4"/><line x1="9.5" y1="12" x2="15" y2="12"/><line x1="9.5" y1="16" x2="15" y2="16"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 7v10l8 4 8-4V7l-8-4Z"/><path d="M4 7l8 4 8-4M12 11v10"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"/><line x1="20" y1="20" x2="16" y2="16"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12" r="2.2"/><circle cx="18" cy="6" r="2.2"/><circle cx="18" cy="18" r="2.2"/><line x1="8" y1="11" x2="16" y2="7"/><line x1="8" y1="13" x2="16" y2="17"/></symbol>
+    <symbol id="i-history" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 4v4h4"/><path d="M12 8v4l3 2"/></symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-5 8a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-8V3"/><line x1="7.5" y1="14" x2="16.5" y2="14"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 .9-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.3.5c-.1.2-.3.3-.1.6.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.2.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.6-.1l1.8.9c.3.1.4.2.5.3.1.2.1.5-.1 1Z"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#sobre">Pular para o conteúdo</a>
+
+<!-- ===== Header ===== -->
+<header class="site-header" id="top">
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Conectapro — início">
+      <svg class="brand-icon" viewBox="0 0 300 320" aria-hidden="true"><use href="#logo-icon"/></svg>
+      <span class="brand-name">Conecta<span>pro</span></span>
+    </a>
+    <nav class="nav-links" id="menu" aria-label="Navegação principal">
+      <a href="#sobre">O que é</a>
+      <a href="#rdc">RDC 978</a>
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a class="btn btn-wa btn-sm" data-wa href="#contato"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <span class="orb orb-1"></span><span class="orb orb-2"></span>
+    <svg class="hero-shield" viewBox="0 0 300 320"><use href="#logo-icon"/></svg>
+  </div>
+  <div class="container hero-inner">
+    <p class="eyebrow">Monitorar · Alertar · Comprovar conformidade</p>
+    <h1>Seus ambientes críticos<br>sob vigilância <span class="accent">24/7</span></h1>
+    <p class="hero-sub">Monitoramento contínuo de temperatura e umidade para laboratórios de análises clínicas — do desvio à ação corretiva, com prova de conformidade para a <strong>RDC 978/2025</strong> da ANVISA.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" data-wa href="#contato"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Falar no WhatsApp</a>
+      <a class="btn btn-ghost on-dark" href="#funcionalidades">Ver funcionalidades</a>
+    </div>
+    <p class="hero-foot">Frio e calor — freezers, geladeiras, câmaras frias, estufas e incubadoras.</p>
+  </div>
+</section>
+
+<!-- ===== O que é (tríade) ===== -->
+<section class="section" id="sobre">
+  <div class="container">
+    <p class="kicker">Visão geral</p>
+    <h2 class="section-title">O que é o Conectapro</h2>
+    <p class="section-lead">Plataforma de monitoramento de ambiente (IoT) e gestão da qualidade que acompanha, em tempo real, a temperatura e a umidade de equipamentos críticos — e dispara alertas quando algo sai da faixa segura, com um fluxo estruturado de justificativa e ação corretiva.</p>
+    <div class="grid grid-3 triade">
+      <article class="card reveal">
+        <span class="card-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-thermo"/></svg></span>
+        <h3>Monitorar</h3>
+        <p>Captura contínua de temperatura e umidade por sensor, na faixa segura de cada equipamento.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card-ic amber"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bell"/></svg></span>
+        <h3>Alertar</h3>
+        <p>O alerta certo, na pessoa certa, pelo canal certo — e-mail, Telegram e WhatsApp.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-clip"/></svg></span>
+        <h3>Comprovar conformidade</h3>
+        <p>Cada desvio vira registro auditável: justificativa, ação corretiva, autor e horário.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Dores ===== -->
+<section class="section section-tint" id="dores">
+  <div class="container">
+    <p class="kicker">O problema</p>
+    <h2 class="section-title">As dores que resolvemos</h2>
+    <div class="grid grid-3">
+      <article class="card reveal"><span class="card-ic amber sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-box"/></svg></span><h3>Perda de amostras e reagentes</h3><p>Excursão de temperatura não percebida a tempo, fora do horário.</p></article>
+      <article class="card reveal"><span class="card-ic sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-clip"/></svg></span><h3>Não conformidade em auditorias</h3><p>Falta de registro contínuo e de evidência de tratamento para a ANVISA.</p></article>
+      <article class="card reveal"><span class="card-ic sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-search"/></svg></span><h3>Falta de rastreabilidade</h3><p>Quem foi avisado, quando, qual a justificativa e qual a ação tomada?</p></article>
+      <article class="card reveal"><span class="card-ic amber sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bell"/></svg></span><h3>Fadiga de alarme</h3><p>Alertas repetidos demais acabam ignorados — e o desvio importante passa.</p></article>
+      <article class="card reveal"><span class="card-ic amber sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-mute"/></svg></span><h3>Sensor “mudo”</h3><p>Equipamento que parou de reportar e ninguém percebe a tempo.</p></article>
+      <article class="card reveal"><span class="card-ic amber sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-layers"/></svg></span><h3>Várias unidades dispersas</h3><p>Matriz e postos de coleta sem visão consolidada em um só painel.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RDC 978 ===== -->
+<section class="section section-dark" id="rdc">
+  <div class="container">
+    <p class="kicker on-dark">Conformidade regulatória</p>
+    <h2 class="section-title on-dark">Adequação à RDC 978/2025 da ANVISA</h2>
+    <p class="section-lead on-dark">Desde junho de 2025, o monitoramento contínuo de temperatura e umidade em equipamentos críticos é obrigatório — o registro manual algumas vezes ao dia não atende mais à norma.</p>
+    <div class="grid grid-2 rdc-grid">
+      <article class="rdc-item reveal"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-thermo"/></svg><div><h3>Monitoramento contínuo 24/7</h3><p>Temperatura e umidade capturadas sem interrupção em geladeiras, freezers e câmaras frias.</p></div></article>
+      <article class="rdc-item reveal"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-file"/></svg><div><h3>Máxima, mínima e de momento</h3><p>Histórico completo de leituras, com resumo diário e exportação em PDF, Excel e CSV.</p></div></article>
+      <article class="rdc-item reveal"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-clip"/></svg><div><h3>Ação corretiva registrada</h3><p>Cada desvio gera justificativa e ação corretiva com autor, data e hora — pronta para inspeção.</p></div></article>
+      <article class="rdc-item reveal"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-history"/></svg><div><h3>Rastreabilidade documentada</h3><p>Trilha de auditoria automática e alerta de falhas, de ponta a ponta.</p></div></article>
+    </div>
+    <div class="rdc-foot">
+      <a class="btn btn-primary" href="assets/checklist-rdc-978.pdf">Baixar checklist de conformidade</a>
+      <p class="disclaimer">O Conectapro apoia o atendimento aos requisitos da RDC 978/2025 — não constitui, por si só, certificação ANVISA/ISO.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Funcionalidades ===== -->
+<section class="section" id="funcionalidades">
+  <div class="container">
+    <p class="kicker">Funcionalidades</p>
+    <h2 class="section-title">Tudo o que você precisa para monitorar e comprovar</h2>
+    <div class="grid grid-3">
+      <article class="card reveal"><span class="card-ic sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-broadcast"/></svg></span><h3>Monitoramento IoT</h3><p>Leituras contínuas por sensor via HTTP, vinculadas à hierarquia física do laboratório.</p></article>
+      <article class="card reveal"><span class="card-ic sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-activity"/></svg></span><h3>Detecção de anomalias</h3><p>Identifica leituras fora da faixa e agrupa desvios para evitar fadiga de alarme.</p></article>
+      <article class="card reveal"><span class="card-ic sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-mute"/></svg></span><h3>Detecção de inatividade</h3><p>Se um sensor para de reportar, dispara alerta — pega o equipamento desligado.</p></article>
+      <article class="card reveal"><span class="card-ic sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-share"/></svg></span><h3>Alertas multicanal</h3><p>E-mail, Telegram e painel — com roteamento por pessoa e escopo. <span class="tag">WhatsApp em implantação</span></p></article>
+      <article class="card reveal"><span class="card-ic sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-clip"/></svg></span><h3>Fluxo de ação corretiva</h3><p>Justificativa, ação e comentário registrados — evidência pronta para auditoria.</p></article>
+      <article class="card reveal"><span class="card-ic sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sitemap"/></svg></span><h3>Gestão multiunidade</h3><p>Empresa → unidade → local → recurso → sensor, tudo em um só painel.</p></article>
+      <article class="card reveal"><span class="card-ic sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-history"/></svg></span><h3>Trilha de auditoria</h3><p>Registro automático de alterações: quem mudou o quê, quando, antes e depois.</p></article>
+      <article class="card reveal"><span class="card-ic sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-file"/></svg></span><h3>Relatórios e exportação</h3><p>Resumo diário de leituras e exportação em PDF, Excel (XLSX) e CSV.</p></article>
+      <article class="card reveal"><span class="card-ic sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-shield"/></svg></span><h3>Segurança</h3><p>Perfis e permissões, 2FA (TOTP), senhas com BCrypt e API REST com JWT.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Diferenciais ===== -->
+<section class="section section-tint" id="diferenciais">
+  <div class="container">
+    <p class="kicker">Por que o Conectapro</p>
+    <h2 class="section-title">Mais que um datalogger</h2>
+    <div class="grid grid-3">
+      <article class="card reveal"><span class="card-ic sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-clip"/></svg></span><h3>Comprova o tratamento</h3><p>Não só alerta: transforma cada desvio em evidência auditável.</p></article>
+      <article class="card reveal"><span class="card-ic sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-layers"/></svg></span><h3>Anti-fadiga de alarme</h3><p>Janela de controle de anomalia evita o excesso de alertas.</p></article>
+      <article class="card reveal"><span class="card-ic sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-mute"/></svg></span><h3>Detecta sensor inativo</h3><p>Pega o “sensor mudo”, não só o valor fora da faixa.</p></article>
+      <article class="card reveal"><span class="card-ic sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-share"/></svg></span><h3>Multicanal de verdade</h3><p>E-mail, Telegram, WhatsApp e painel, com roteamento por escopo.</p></article>
+      <article class="card reveal"><span class="card-ic sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sitemap"/></svg></span><h3>Multiunidade nativo</h3><p>Hierarquia clara da empresa ao sensor, num só painel.</p></article>
+      <article class="card reveal"><span class="card-ic sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-broadcast"/></svg></span><h3>Plataforma extensível</h3><p>API REST/JWT, automações e relatórios — não um produto fechado.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Público-alvo ===== -->
+<section class="section" id="publico">
+  <div class="container">
+    <p class="kicker">Para quem</p>
+    <h2 class="section-title">Feito para quem tem cadeia de temperatura crítica</h2>
+    <div class="grid grid-4 publico">
+      <article class="pill reveal"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-flask"/></svg><span>Laboratórios de análises clínicas</span></article>
+      <article class="pill reveal"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-thermo"/></svg><span>Bancos de sangue e biobancos</span></article>
+      <article class="pill reveal"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-flask"/></svg><span>Farmácias de manipulação</span></article>
+      <article class="pill reveal"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-shield"/></svg><span>Clínicas com ambientes controlados</span></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA final ===== -->
+<section class="section section-dark cta-final" id="contato">
+  <div class="container cta-wrap">
+    <h2 class="section-title on-dark">Pronto para colocar seus ambientes críticos sob vigilância?</h2>
+    <p class="section-lead on-dark">Fale com a gente para uma demonstração com o parque de equipamentos do seu laboratório. Posso fazer antes um diagnóstico rápido dos pontos da RDC 978, sem compromisso.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" data-wa href="#"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Falar no WhatsApp</a>
+      <a class="btn btn-ghost on-dark" data-email href="#">Enviar e-mail</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <svg class="brand-icon" viewBox="0 0 300 320" aria-hidden="true"><use href="#logo-icon"/></svg>
+      <span class="brand-name on-dark">Conecta<span>pro</span></span>
+    </div>
+    <p class="footer-note">Monitoramento de temperatura e umidade e gestão da qualidade para laboratórios de análises clínicas.</p>
+    <p class="footer-disclaimer">O Conectapro apoia o atendimento aos requisitos da RDC 978/2025 da ANVISA — não constitui, por si só, certificação ANVISA/ISO.</p>
+    <p class="footer-copy">© <span id="year">2026</span> Conectapro. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
