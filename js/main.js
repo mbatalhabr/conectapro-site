@@ -3,8 +3,8 @@
    AJUSTE AQUI seus contatos (1 lugar só):
 ========================================================= */
 const PHONE = "5511990078668";              // ex.: 5511990078668 (DDI 55 + DDD + número, só dígitos)
-const EMAIL = "mbatalhabr@gmail.com";
-const WA_TEXT = "Olá! Vim pelo site do Conectapro e gostaria de saber mais sobre o monitoramento de temperatura para a RDC 978.";
+const EMAIL = "mauricio@conectapro.io";
+const WA_TEXT = "Olá! Vim pelo site do Conectapro.io e gostaria de saber mais sobre o monitoramento de temperatura para a RDC 978.";
 /* ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
