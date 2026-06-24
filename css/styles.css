@@ -181,3 +181,9 @@ p{margin:0}
 }
 
 section[id]{scroll-margin-top:78px}
+
+/* ===== Rodapé: contatos ===== */
+.footer-contacts{display:flex;gap:14px;justify-content:center;margin:4px 0 2px}
+.fc{width:42px;height:42px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--c,var(--teal));color:#fff;transition:transform .15s ease,opacity .15s ease}
+.fc:hover{transform:translateY(-2px);opacity:.92}
+.fc svg{width:22px;height:22px}

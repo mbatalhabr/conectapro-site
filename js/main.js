@@ -4,6 +4,7 @@
 ========================================================= */
 const PHONE = "5511990078668";  // WhatsApp Business (55 + DDD + número). Ajuste se usar outro número.
 const EMAIL = "mauricio@conectapro.io";
+const LINKEDIN = "https://www.linkedin.com/in/maur%C3%ADcio-batalha-das-neves/";
 const WA_TEXT = "Olá! Vim pelo site do Conectapro e gostaria de saber mais sobre o monitoramento de temperatura para a RDC 978.";
 /* ========================================================= */
 
@@ -15,6 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-email]").forEach(a => {
     a.href = `mailto:${EMAIL}?subject=${encodeURIComponent("Conectapro — quero saber mais")}`;
   });
+
+  // LinkedIn
+  document.querySelectorAll("[data-linkedin]").forEach(a => { a.href = LINKEDIN; a.target = "_blank"; a.rel = "noopener"; });
 
   // Menu mobile
   const toggle = document.getElementById("navToggle");
