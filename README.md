@@ -21,7 +21,7 @@ conectapro-site/
 Abra **`js/main.js`** e edite só estas três linhas no topo:
 ```js
 const PHONE = "55SEUNUMERO";   // DDI 55 + DDD + número, só dígitos. Ex.: 5511990078668
-const EMAIL = "contato@conectapro.com.br";
+const EMAIL = "contato@conectapro.io";
 const WA_TEXT = "Olá! Vim pelo site do Conectapro...";
 ```
 > Use o número do **WhatsApp Business** do Conectapro (não o pessoal). Todos os botões de WhatsApp e e-mail do site passam a apontar para esses valores.
@@ -51,7 +51,7 @@ Confira também, no `index.html`, as URLs em `<meta property="og:...">` e `<link
 A cada `git push`, o site atualiza sozinho.
 
 ## 4. (Opcional) Domínio próprio
-1. Registre `conectapro.com.br` (ex.: registro.br).
+1. Registre `conectapro.io` (ex.: registro.br).
 2. No GitHub **Settings → Pages → Custom domain**, informe o domínio (isso cria um arquivo `CNAME`).
 3. No DNS do domínio, aponte para o GitHub Pages (registro `CNAME`/`A` conforme a doc do GitHub) e marque **Enforce HTTPS**.
 

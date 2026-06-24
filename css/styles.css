@@ -160,3 +160,24 @@ p{margin:0}
   .js .reveal{opacity:1;transform:none;transition:none}
   .btn,.card{transition:none}
 }
+
+/* ===== Screenshots / molduras ===== */
+.browser{border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff}
+.browser-bar{display:flex;align-items:center;gap:10px;padding:10px 14px;background:#fff;border-bottom:1px solid var(--line)}
+.browser-bar .dots{display:flex;gap:6px}
+.browser-bar .dot{width:11px;height:11px;border-radius:50%}
+.browser-bar .url{flex:1;text-align:center;background:var(--ice2);border:1px solid var(--line);border-radius:8px;padding:5px 12px;font-size:.76rem;color:var(--muted);max-width:320px;margin:0 auto}
+.browser img{display:block;width:100%;height:auto}
+.shot-lead{max-width:960px;margin:6px auto 0}
+.shot-row{display:grid;grid-template-columns:1.1fr .9fr;gap:38px;align-items:center;margin-top:48px}
+.shot-row.rev .shot-media{order:2}
+.shot-row.rev .shot-txt{order:1}
+.shot-txt .eyebrow-sm{font-family:var(--font-display);font-weight:600;text-transform:uppercase;letter-spacing:1.5px;color:var(--teal);font-size:.74rem;margin-bottom:10px}
+.shot-txt h3{font-size:1.5rem}
+.shot-txt p{color:var(--muted);margin-top:12px;font-size:1.02rem}
+@media(max-width:760px){
+  .shot-row{grid-template-columns:1fr;gap:22px;margin-top:34px}
+  .shot-row.rev .shot-media,.shot-row.rev .shot-txt{order:initial}
+}
+
+section[id]{scroll-margin-top:78px}
